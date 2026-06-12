@@ -1,0 +1,15 @@
+portfolio:
+  tickers: ["AAPL", "MSFT", "JPM", "GLD", "TLT"]
+  weights: [0.25, 0.25, 0.20, 0.15, 0.15]
+  benchmark: "SPY"
+  start_date: "2018-01-01"
+  end_date: "2024-12-31"
+
+risk:
+  confidence_levels: [0.95, 0.99]
+  monte_carlo_sims: 10000
+  rolling_window_days: 252
+
+factors:
+  model: "FF5"  # FF3 or FF5
+  rolling_window_days: [60, 252]
